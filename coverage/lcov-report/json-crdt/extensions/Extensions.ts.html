@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">46.66% </span>
+                <span class="strong">60% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>7/15</span>
+                <span class='fraction'>9/15</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">55.55% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/9</span>
+                <span class='fraction'>5/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">53.84% </span>
+                <span class="strong">69.23% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>7/13</span>
+                <span class='fraction'>9/13</span>
             </div>
         
             
@@ -57,11 +57,11 @@
         <template id="filterTemplate">
             <div class="quiet">
                 Filter:
-                <input oninput="onInput()" type="search" id="fileSearch">
+                <input type="search" id="fileSearch">
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -101,13 +101,34 @@
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
 <a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">91x</span>
+<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">155x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">91x</span>
-<span class="cline-any cline-yes">13793x</span>
+<span class="cline-any cline-yes">155x</span>
+<span class="cline-any cline-yes">24029x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">469x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3712x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">40x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -117,41 +138,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">60x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {printTree} from '../../util/print/printTree';
-import {Printable} from '../../util/print/types';
-import {ExtensionDefinition} from './types';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {printTree} from 'tree-dump/lib/printTree';
+import type {AnyExtension} from './Extension';
+import type {Printable} from 'tree-dump/lib/types';
 &nbsp;
 export class Extensions implements Printable {
-  protected readonly ext: Record&lt;number, ExtensionDefinition&gt; = {};
+  protected readonly ext: Record&lt;number, AnyExtension&gt; = {};
 &nbsp;
-  public <span class="fstat-no" title="function not covered" >register(</span>extension: ExtensionDefinition&lt;any, any, any&gt;) {
-<span class="cstat-no" title="statement not covered" >    this.ext[extension.id] = extension;</span>
+  public register(extension: AnyExtension) {
+    this.ext[extension.id] = extension;
   }
 &nbsp;
-  public <span class="fstat-no" title="function not covered" >get(</span>id: number): ExtensionDefinition | undefined {
-<span class="cstat-no" title="statement not covered" >    return this.ext[id];</span>
+  public get(id: number): AnyExtension | undefined {
+    return this.ext[id];
   }
 &nbsp;
   public size(): number {
@@ -169,10 +169,10 @@ export class Extensions implements Printable {
       .map(<span class="fstat-no" title="function not covered" >(k</span>) =&gt; <span class="cstat-no" title="statement not covered" >+k)</span>
       .sort();
 <span class="cstat-no" title="statement not covered" >    return (</span>
-      this.constructor.name +
+      'extensions' +
       printTree(
         tab,
-        keys.map(<span class="fstat-no" title="function not covered" >(k</span>) =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(t</span>ab) =&gt; <span class="cstat-no" title="statement not covered" >`${k}: ${this.ext[k].Node.name}`)</span></span>,
+        keys.map(<span class="fstat-no" title="function not covered" >(k</span>) =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(t</span>ab) =&gt; <span class="cstat-no" title="statement not covered" >`${k}: ${this.ext[k].name}`)</span></span>,
       )
     );
   }
@@ -184,7 +184,7 @@ export class Extensions implements Printable {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-12-18T20:46:54.422Z
+                at 2024-12-27T07:26:59.898Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
