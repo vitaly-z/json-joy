@@ -23,11 +23,11 @@ merging of changes in JSON data models, avoiding conflicts between replicas.
 - [**JSON CRDT Explorer**](https://explorer.jsoncrdt.org)
 - [**_μ txt_ (mu-txt) rich-text editor**](https://mutxt.com) powered by JSON CRDT
 - Integrations
-  - [**React.js**](./packages/collaborative-react/README.md)
+  - [**React**](./packages/collaborative-react/README.md)
   - [React.js **`<CollaborativeInput>`**](./packages/collaborative-input-react/README.md)
   - [DOM **`<input>`** and **`<textarea>`**](./packages/collaborative-input/README.md)
   - Plain text editors:
-    - [**Ace**](./packages/collaborative-ace/README.md) & [React.js **`<CollaborativeAce>`**](./packages/collaborative-ace-react/README.md)
+    - [**Ace**](./packages/collaborative-ace/README.md) & [React **`<CollaborativeAce>`**](./packages/collaborative-ace-react/README.md)
     - [**CodeMirror**](./packages/collaborative-codemirror/README.md)
     - [**Monaco**](./packages/collaborative-monaco/README.md)
   - Rich-text editors:
