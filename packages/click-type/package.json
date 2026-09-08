@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.0.1",
+  "version": "18.29.0",
   "description": "Interactive JSON Type schema explorer and editor",
   "author": {
     "name": "streamich",

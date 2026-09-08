@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "18.28.0",
+  "version": "18.29.0",
   "description": "JSON CRDT: a JSON-like conflict-free replicated data type, its patch format, and rich-text extensions",
   "author": {
     "name": "streamich",
